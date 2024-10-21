@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <title>Customize Your Pizza</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">Delicious Pizzas</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="customize.html">Order Now</a></li>
+                    <li><a href="track.html">Track Order</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="customization">
+            <h2>Customize Your Pizza</h2>
+            <form id="customizeForm">
+
+                <!-- Crust Options -->
+                <div class="option">
+                    <h3>Choose Your Crust</h3>
+                    <div class="card">
+                        <input type="radio" id="thin-crust" name="crust" value="Thin Crust">
+                        <label for="thin-crust">Thin Crust</label>
+                    </div>
+                    <div class="card">
+                        <input type="radio" id="thick-crust" name="crust" value="Thick Crust">
+                        <label for="thick-crust">Thick Crust</label>
+                    </div>
+                    <div class="card">
+                        <input type="radio" id="cheese-stuffed-crust" name="crust" value="Cheese Stuffed Crust">
+                        <label for="cheese-stuffed-crust">Cheese Stuffed Crust</label>
+                    </div>
+                    <div class="card">
+                        <input type="radio" id="gluten-free-crust" name="crust" value="Gluten-Free Crust">
+                        <label for="gluten-free-crust">Gluten-Free Crust</label>
+                    </div>
+                </div>
+
+                <!-- Sauce Options -->
+                <div class="option">
+                    <h3>Choose Your Sauce</h3>
+                    <div class="card">
+                        <input type="radio" id="tomato-sauce" name="sauce" value="Tomato Sauce">
+                        <label for="tomato-sauce">Tomato Sauce</label>
+                    </div>
+                    <div class="card">
+                        <input type="radio" id="pesto-sauce" name="sauce" value="Pesto Sauce">
+                        <label for="pesto-sauce">Pesto Sauce</label>
+                    </div>
+                    <div class="card">
+                        <input type="radio" id="alfredo-sauce" name="sauce" value="Alfredo Sauce">
+                        <label for="alfredo-sauce">Alfredo Sauce</label>
+                    </div>
+                    <div class="card">
+                        <input type="radio" id="bbq-sauce" name="sauce" value="BBQ Sauce">
+                        <label for="bbq-sauce">BBQ Sauce</label>
+                    </div>
+                </div>
+
+                <!-- Cheese Options -->
+                <div class="option">
+                    <h3>Choose Your Cheese</h3>
+                    <div class="card">
+                        <input type="radio" id="mozzarella-cheese" name="cheese" value="Mozzarella Cheese">
+                        <label for="mozzarella-cheese">Mozzarella Cheese</label>
+                    </div>
+                    <div class="card">
+                        <input type="radio" id="cheddar-cheese" name="cheese" value="Cheddar Cheese">
+                        <label for="cheddar-cheese">Cheddar Cheese</label>
+                    </div>
+                    <div class="card">
+                        <input type="radio" id="vegan-cheese" name="cheese" value="Vegan Cheese">
+                        <label for="vegan-cheese">Vegan Cheese</label>
+                    </div>
+                </div>
+
+                <!-- Topping Options -->
+                <div class="option">
+                    <h3>Choose Your Toppings</h3>
+                    <div class="card">
+                        <input type="checkbox" id="pepperoni" value="Pepperoni">
+                        <label for="pepperoni">Pepperoni</label>
+                    </div>
+                    <div class="card">
+                        <input type="checkbox" id="mushrooms" value="Mushrooms">
+                        <label for="mushrooms">Mushrooms</label>
+                    </div>
+                    <div class="card">
+                        <input type="checkbox" id="peppers" value="Peppers">
+                        <label for="peppers">Peppers</label>
+                    </div>
+                    <div class="card">
+                        <input type="checkbox" id="black-olives" value="Black Olives">
+                        <label for="black-olives">Black Olives</label>
+                    </div>
+                    <div class="card">
+                        <input type="checkbox" id="pineapple" value="Pineapple">
+                        <label for="pineapple">Pineapple</label>
+                    </div>
+                    <div class="card">
+                        <input type="checkbox" id="onions" value="Onions">
+                        <label for="onions">Onions</label>
+                    </div>
+                    <div class="card">
+                        <input type="checkbox" id="jalapenos" value="Jalapenos">
+                        <label for="jalapenos">Jalapenos</label>
+                    </div>
+                    <div class="card">
+                        <input type="checkbox" id="spinach" value="Spinach">
+                        <label for="spinach">Spinach</label>
+                    </div>
+                </div>
+
+                <!-- Submit Order Button -->
+                <button type="button" id="submitOrder" class="btn submit-order">Submit Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Delicious Pizzas - Bringing Happiness to Your Doorstep</p>
+    </footer>
+</body>
+<script src="scripts.js"></script>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Track Your Order</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">Delicious Pizzas</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="customize.html">Order Now</a></li>
+                    <li><a href="track.html">Track Order</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tracking">
+            <h2>Track Your Pizza Order</h2>
+
+            <!-- Horizontal Tracking Widget -->
+            <div class="tracking-widget">
+                <div class="step complete">
+                    <div class="step-icon">🛒</div>
+                    <div class="step-info">
+                        <h4>Order Received</h4>
+                        <p>Your order has been received and is now being processed.</p>
+                    </div>
+                </div>
+                <div class="step complete">
+                    <div class="step-icon">👨‍🍳</div>
+                    <div class="step-info">
+                        <h4>Pizza Being Prepared</h4>
+                        <p>Your pizza is being prepared with the finest ingredients.</p>
+                    </div>
+                </div>
+                <div class="step active">
+                    <div class="step-icon">🔥</div>
+                    <div class="step-info">
+                        <h4>In the Oven</h4>
+                        <p>Your pizza is now baking to perfection.</p>
+                    </div>
+                </div>
+                <div class="step pending">
+                    <div class="step-icon">🚚</div>
+                    <div class="step-info">
+                        <h4>Out for Delivery</h4>
+                        <p>Your pizza is on its way to you!</p>
+                    </div>
+                </div>
+                <div class="step pending">
+                    <div class="step-icon">🏠</div>
+                    <div class="step-info">
+                        <h4>Delivered</h4>
+                        <p>Your pizza has been delivered. Enjoy your meal!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-bar-container">
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+                <p>Order Progress: 60%</p>
+            </div>
+
+            <!-- Estimated Time Widget -->
+            <div class="estimated-time">
+                <h3>Estimated Delivery Time</h3>
+                <p><strong>20-30 minutes</strong></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Delicious Pizzas - Bringing Happiness to Your Doorstep</p>
+    </footer>
+</body>
+<script src="scripts.js"></script>
+</html>

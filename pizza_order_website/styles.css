@@ -1,0 +1,370 @@
+/* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #ff6b6b;
+    padding: 10px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffe66d;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('images/hero-pizza.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+}
+
+.btn.order-now {
+    background-color: #ffe66d;
+    color: #333;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn.order-now:hover {
+    background-color: #fff;
+}
+
+/* Video Section Centering */
+.promo {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Pizza Gallery */
+.signature {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.pizza-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pizza-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin: 15px;
+}
+
+.pizza-card img.pizza-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: #fff5e6;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #ff6b6b;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+
+/* Tracking Section */
+.tracking {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Horizontal Tracking Widget */
+.tracking-widget {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    max-width: 1000px;
+    background: #fff5e6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18%;
+    text-align: center;
+    position: relative;
+}
+
+.step-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.step-info {
+    font-size: 0.9rem;
+}
+
+.step.complete .step-icon {
+    color: #ff6b6b;
+}
+
+.step.active .step-icon {
+    color: #ffe66d;
+    font-weight: bold;
+}
+
+.step.pending .step-icon {
+    color: #cccccc;
+}
+
+/* Progress Bar Styling */
+.progress-bar-container {
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #ff6b6b;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Estimated Time Widget */
+.estimated-time {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 300px;
+}
+
+.estimated-time h3 {
+    margin-bottom: 10px;
+    color: #ff6b6b;
+}
+
+/* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #ff6b6b;
+    padding: 10px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffe66d;
+}
+
+/* Customization Section */
+.customization {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.customization form {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Option Styling */
+.option {
+    margin: 30px 0;
+}
+
+.option h3 {
+    margin-bottom: 15px;
+    color: #ff6b6b;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.card input {
+    margin-right: 15px;
+    transform: scale(1.2);
+}
+
+.card label {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Submit Order Button */
+.btn.submit-order {
+    display: block;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 40px auto;
+    border: none;
+    cursor: pointer;
+}
+
+.btn.submit-order:hover {
+    background-color: #e05e5e;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #ff6b6b;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
